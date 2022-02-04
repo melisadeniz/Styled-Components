@@ -1,4 +1,5 @@
 import React from 'react';
+import {  ChangeThemeContextProvider } from './context/ChangeThemeContext';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
 import './index.css';
@@ -8,7 +9,9 @@ import reportWebVitals from './reportWebVitals';
 ReactDOM.render(
   <BrowserRouter>
   <React.StrictMode>
+  <ChangeThemeContextProvider>
     <App />
+    </ChangeThemeContextProvider>
   </React.StrictMode>
   </BrowserRouter>,
   document.getElementById('root')

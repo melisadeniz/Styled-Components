@@ -1,8 +1,6 @@
 import styled from 'styled-components'
 
 export const FooterStyled = styled.footer`
-  background-color: ${({ theme }) => theme.colors.footer};
-  color: #fff;
   padding: 20px 0 40px;
   ul {
     list-style-type: none;
@@ -14,7 +12,7 @@ export const FooterStyled = styled.footer`
     text-align: right;
   }
   
-  @media (max-width: ${({ theme }) => theme.mobile}) {
+  @media (max-width: 765px) {
     text-align: center;
     ul {
       padding: 0;
@@ -31,7 +29,7 @@ export const Flex = styled.div`
   & > ul {
     flex: 1;
   }
-  @media (max-width: ${({ theme }) => theme.mobile}) {
+  @media (max-width: 765px) {
     flex-direction: column;
     text-align: center;
   }

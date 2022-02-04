@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const CardStyled = styled.div`
+export const Card = styled.div`
   display: inline-table;
   background-color: #fff;
   border-radius: 15px;

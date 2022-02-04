@@ -1,21 +1,19 @@
+import { GlobalStyle } from "./StyledComponents/GlobalStyled";
+import { styledComponentTheme } from "./StyledComponents/styledComponentTheme"
 import { ThemeProvider } from 'styled-components';
+import { ChangeThemeContext } from './context/ChangeThemeContext'
+import { useContext } from "react";
+import Home from "./components/Home"
 import Navbar from "./components/base/Navbar";
-import Footer from "./components/base/Footer";
-import Home from "./components/Home";
+import Footer from "./components/base/Footer"
 
 function App() {
 
-  const theme = {
-    colors: {
-      header: '#004422',
-      body: '#004422',
-      footer: '#004422',
-    },
-    mobile: '768px',
-  }
+  const {themeName} = useContext(ChangeThemeContext)
 
   return (
-    <ThemeProvider theme={theme}>
+    <ThemeProvider theme={styledComponentTheme[themeName]}>
+      <GlobalStyle>
     <>
      <Navbar />
      
@@ -23,6 +21,7 @@ function App() {
 
      <Footer />
     </>
+    </GlobalStyle>
     </ThemeProvider>
   );
 }

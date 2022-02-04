@@ -1,5 +1,5 @@
-import { Nav, HeaderStyled, Logo } from "../../StyledComponents/NavbarStyled"
-import { Button } from "../../StyledComponents/ButtonStyled"
+import { Logo,  Nav, HeaderStyled } from "../../StyledComponents/NavbarStyled"
+import ChangeThemeButton from "../ChangeThemeButton"
 
 
 function Navbar() {
@@ -7,10 +7,15 @@ function Navbar() {
   return (
        <HeaderStyled>
        <Nav>
-       <Logo src='./beerlogo.png' alt='...'/>
-       <h1>PUNK API</h1>
+      
+       <Logo src='./homelogo.png' alt='...'/>
+       <h1>HOME</h1>
+
+       <div>
+       <ChangeThemeButton/>
+       </div>
        </Nav>    
-      </HeaderStyled>
+       </HeaderStyled>
   )
 }
 
