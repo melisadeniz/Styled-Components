@@ -1,20 +1,16 @@
 import styled from "styled-components";
 
-export const HeaderStyled = styled.header` 
-  padding: 20px 10px;
-`
-
 export const Nav = styled.nav`
+  background-color: ${({theme}) => theme.NavColor};
   display: flex;
-  align-items: center;
-  justify-content: left;
-  margin-bottom: 5px; 
+  padding: 20px;
+  align-items: ;
   @media(max-width: 765px ){
     flex-direction: column;
   }
   h1 {
   color: white;
-  margin-left: 20px;
+  margin: 10px 20px;
   font-family: monospace;
   font-size: xx-large;
 }

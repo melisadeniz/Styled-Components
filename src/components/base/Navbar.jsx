@@ -1,21 +1,20 @@
-import { Logo,  Nav, HeaderStyled } from "../../StyledComponents/NavbarStyled"
+import { Logo,  Nav } from "../../StyledComponents/NavbarStyled"
 import ChangeThemeButton from "../ChangeThemeButton"
 
 
 function Navbar() {
 
   return (
-       <HeaderStyled>
-       <Nav>
       
+       <Nav>
+    
        <Logo src='./homelogo.png' alt='...'/>
        <h1>HOME</h1>
-
-       <div>
+    
        <ChangeThemeButton/>
-       </div>
+   
        </Nav>    
-       </HeaderStyled>
+  
   )
 }
 

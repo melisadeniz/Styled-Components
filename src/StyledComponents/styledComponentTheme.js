@@ -1,20 +1,21 @@
 export const styledComponentTheme = {
   light: {
-      backgroundColor: "#white",
-      CardColor: '#76ffb3a4;',
-      AboutCard:'tomato',
-      PrimaryBtnColor: '#ff7230',
-      SecondaryBtnColor: '#b547ff',
-      NavColor: '#5fffff84',
-      TextColor:'#4d4d4d'
+      backgroundColor: "#D6A2E8",
+      ButtonColor: "#dff9fb",
+      CardColor: '#dff9fb',
+      NavColor: '#82589F',
+      FooterColor: '#82589F',
+      TextColor:'black',
+      ContactColor:'white'
   },
   dark: {
-      backgroundColor: "#0000001c",
-      CardColor: "#4e6d5ca3",
-      AboutCard:'#8b5f57',
-      PrimaryBtnColor: '#fddac9',
-      SecondaryBtnColor: '#e4bbff',
-      NavColor: '#12636384',
-      TextColor:'white'
+      backgroundColor: "#ffda79",
+      ButtonColor: "#fad390",
+      CardColor: "#cd6133",
+      NavColor: '#cc8e35',
+      FooterColor: '#cc8e35',
+      TextColor:'white',
+      ContactColor:'black'
   }
 }
+

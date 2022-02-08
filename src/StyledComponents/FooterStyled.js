@@ -1,6 +1,8 @@
 import styled from 'styled-components'
 
 export const FooterStyled = styled.footer`
+  background-color: ${({theme}) => theme.FooterColor};
+  color: ${({theme}) => theme.ContactColor};
   padding: 20px 0 40px;
   ul {
     list-style-type: none;

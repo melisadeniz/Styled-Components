@@ -1,8 +1,8 @@
 import styled from "styled-components";
 
 export const Card = styled.div`
+  background-color:${({theme}) => theme.CardColor} ;
   display: inline-table;
-  background-color: #fff;
   border-radius: 15px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
   margin: 30px 5px;
